@@ -1,0 +1,168 @@
+{Modeule two: Course Overview}
+What is in a JS starter kit?
+    Package Management
+    Bundling
+    Minification
+    Sourcemaps
+    Transpiling
+    Dynamic HTML Generation
+    Centralized HTTP
+    Mock API framework
+    Component libraries
+    Development Webserver
+    Linting
+    Automated testing 
+    Continuous integration 
+    Automated build
+    Automated deployment
+    Working example app convey how they all work together
+
+GitHub as source control
+    - Continuous integration
+    - Automated Deployment (with Heroku + GitHub)
+
+To commit work in starter kit:
+    1. stage all files changed
+        git add .
+    2. commit changes locally with a message
+        git commit -m "added new feature"
+    3. Push work to GitHub
+        git push
+
+Course agenda 
+    JavaScript Development Environment 
+    = Boilerplate
+    = Starter kit
+    = Seed
+    = Starter Project
+
+Rhythm: 
+    Options
+    Recommendation 
+    Implement
+
+
+{Modeule two: Course Outline}
+    intro
+    editor: key configuration
+    package manager
+    web server
+    development webservers for sharing work-in-progress
+    Automation: build with single command
+    Transpiling
+    Bundling
+    Linting
+    Testing and continuous integration
+        Unit test decisions:
+            framework
+            assertion library
+            helper libraries
+            where to run tests
+            where to place tests
+            when to run test
+    HTTP call approach
+        Node
+            http request
+        Browser
+            XMLHttpRequest
+            jQuery
+            Fetch
+        Node & Browser
+            isomorphic-Fetch
+            xhr
+            SuperAgent
+            Axios
+        Create mock APIs
+    Demo App 
+        Project Structure
+    Production build
+        Automatic build
+    Automated Deployment: deploy API and interface to cloud host
+    Update Approaches after launches
+
+{Modeule three: Editors and Configuration}
+Editor options:
+Editorconfig
+    Editors criteria:
+        Strong JS support & Transpiling
+        Index JS file for autocompletion
+        Parse ES6 imports: report un-used imports as well as errors
+        Automated refactor tooling: rename & extraction
+        Framework support like node, react or angular
+        Built-in terminal 
+            - most essential?: 
+                single window with all the info of current status of application
+                like linting error, broken tests, build status, code coverage & more
+        Options: Atom, Webstorm, Brackets, VSCode (selected)
+    Editorconfig for automated consistency:
+        placed at root of project
+
+{Module four: Package Management}
+Review JS package managers
+Setup npm
+Setup security scanning
+
+    Review: 
+        Bower (outdated?)
+        npm (selected)
+        jspm
+    When to run security check:
+        npm start 
+    Install security check globally: npm install -g nsp
+
+{Module five: Development Web Server}
+Review development webserver options
+Configure a Dev Webserver
+Services for sharing work
+
+    dev server options:
+        http-server (ultra light-weight)
+        live-server (support live reload)
+        Express (also for PROD, selected)
+        koa
+        hapi
+        budo 
+        Webpack (Built in web server)
+        Browserify
+        Browsersync 
+            (automatically setup dedicated IP for LAN; all device in sync for cross platform testing)
+        
+    Configure express: see srcServer.js
+
+    Sharing Work-in-progress:
+        localtunnel: easiest setup for low risk project (selected)
+        ngork: Secure with easy setup
+        now: No firewall hole; Hosting persists
+        Surge: No firewall hole; Hosting persists
+
+    
+
+
+
+
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
