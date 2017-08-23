@@ -135,6 +135,31 @@ Services for sharing work
         now: No firewall hole; Hosting persists
         Surge: No firewall hole; Hosting persists
 
+{Module six: Automation}
+Options
+NPM script
+    options:
+        Grunt: 
+            configuration over code
+            write intermediary files b/t steps
+            large plugin ecosystem
+        Gulp:
+            in-memory streams (pipe) - pipe output from this step to the next step
+            Fast
+            Code over configuration
+        npm scripts (selected):
+            Declared in package.json
+            Leverage OS's command line
+            Directly use npm packages
+            Call separate Node scripts
+            Convention-based pre/post hooks
+            good documentation
+    
+    npm scripts:
+        
+
+
+
     
 
 
