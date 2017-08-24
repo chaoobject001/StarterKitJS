@@ -3,7 +3,7 @@ import path from 'path';
 
 export default {
   debug: true, // enable debug message
-  devtool: 'inline-source-map', // source map setting
+  devtool: 'inline-source-map', // sourcemap (for debugging) setting
   noInfo: false, // provide a list of bundled files
   entry: [
     path.resolve(__dirname, 'src/index')  // entry point: index.js

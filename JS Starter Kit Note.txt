@@ -204,6 +204,26 @@ Bundlers options:
   Rollup: Tree shaking; Newer; better for library at this point
   JSPM: SystemJS; load module at run-time
 
+Debug transpiled and bundled code with sourcemaps
+  Sourcemaps maps code back to original source
+  Can be generated automatically as part of build process
+  Only downloaded when Dev tools are open
+
+{Module nine: Linting}
+Linting Tools
+Configuration approach for ESLint
+Setup ESLint (now lint TypeScript)
+
+  Linting Tools:
+    Enforce Consistency
+    Avoid Mistakes
+
+  Core Decision:
+  Config format?
+  Which built-in rules?
+  Warnning or Errors?
+  Which plugins? (for extra functions)
+  Use preset?
 
 
 
