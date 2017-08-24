@@ -157,8 +157,34 @@ NPM script
 
     npm scripts:
 
+{Module seven: Transpiling}
+History and future
+Transpilers
+Set up Babel
 
+  Transpilers:
+    Babel: compile the newest JS down to ES5
+    TypeScript: type safety for larger project with clear developer intent and autocompletion
+    Elm: Clean syntax with immutable data structure, no run-time error
 
+  Babel:
+    configuration:
+      .babelrc
+        not npm specific
+        easier to read (isolated)
+      package.json
+        one less file
+
+  Build style:
+    ES5:
+      faster without transpile
+      no transpiler dependency
+    Transpiled:
+      new feature
+      consistent coding style
+      same linting rule everywhere
+
+  Setup Babel: update build process to transpile on File Save
 
 
 

@@ -1,10 +1,10 @@
 // configure web server to serve up files in source directory
-var express = require('express');
-var path = require('path'); // reference to path
-var open = require('open'); // open site in browser
+import express from 'express';
+import path from 'path'; // reference to path
+import open from 'open'; // open site in browser
 
-var port = 3000;
-var app = express(); // create an instance of express and set to the variable app
+const port = 3000;
+const app = express(); // create an instance of express and set to the variable app
 
 // inform express the route to handle
 // any references to the root should be hadled by the anonymous function
