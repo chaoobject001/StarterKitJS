@@ -186,6 +186,25 @@ Set up Babel
 
   Setup Babel: update build process to transpile on File Save
 
+{Module eight: Bundling}
+ES6 / ES2015 Module
+  standardized
+  statically analyzable (no dynamic declaration)
+  readbility
+    Named import: easy to write variable that references parts of imported file
+    Default export: speficy how to consume module
+
+Bounder: bundle modules into single minified file
+Bundlers options:
+  Browserify: bundle npm package for web browser
+  Webpack:
+    also import CSS, images, Fonts, HTML
+    bundle splitting
+    built in hot reloading server
+  Rollup: Tree shaking; Newer; better for library at this point
+  JSPM: SystemJS; load module at run-time
+
+
 
 
 

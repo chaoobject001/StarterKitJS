@@ -3,8 +3,17 @@ import express from 'express';
 import path from 'path'; // reference to path
 import open from 'open'; // open site in browser
 
+import webpack from 'webpack';
+import config from '../webpack.config.dev';
+
 const port = 3000;
 const app = express(); // create an instance of express and set to the variable app
+const compiler = webpack(config);
+
+app.use(require('webpack-dev-middleware')(compiler, {
+  noInfo: true,
+  publicPath: config.output.publicPath // reference a variable at Webpack config
+}));
 
 // inform express the route to handle
 // any references to the root should be hadled by the anonymous function
