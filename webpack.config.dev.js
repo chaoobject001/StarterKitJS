@@ -1,3 +1,4 @@
+import webpack from 'webpack';
 import path from 'path';
 
 export default {
@@ -5,7 +6,7 @@ export default {
   devtool: 'inline-source-map', // source map setting
   noInfo: false, // provide a list of bundled files
   entry: [
-    path.resolve(__dirname, 'src/index')
+    path.resolve(__dirname, 'src/index')  // entry point: index.js
   ],
   // entry point of application
   // __dirname provides full path
@@ -20,6 +21,10 @@ export default {
   // Webpack serve build from memory -
   // No physical file generated, simulation only
   // this can be consumed by html page
+
+  devServer: {
+    contentBase: path.resolve(__dirname, 'src')
+  },
 
   plugins: [],
   // plugin for extra features:
