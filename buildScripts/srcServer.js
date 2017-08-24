@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path'); // reference to path
 var open = require('open'); // open site in browser
 
-var port = 3003;
+var port = 3000;
 var app = express(); // create an instance of express and set to the variable app
 
 // inform express the route to handle
