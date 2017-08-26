@@ -1,0 +1,27 @@
+{
+  "root": true, // identify project root directory - this is the only ESLINT file apply to this project
+  "extends": [
+    "eslint:recommended",       // default recommanded rule
+    "plugin:import/errors",     // invalid import statement identified upon save 
+    "plugin:import/warnings"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 7,       // ES 2016 or ES 7
+    "sourceType": "module"  // standard JS module
+  },
+  "env": {
+    // expect global variables  
+    "browser": true,
+    "node": true,
+    "mocha": true   // test framework
+  },
+  "rules": {
+    // override ESLint standard rules here
+    /*
+    0: OFF
+    1: Warning - will not break build
+    2: Error
+    */
+    "no-console": 1
+  }
+}
