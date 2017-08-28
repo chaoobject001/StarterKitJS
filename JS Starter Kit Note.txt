@@ -225,6 +225,23 @@ Setup ESLint (now lint TypeScript)
   Which plugins? (for extra functions)
   Use preset?
 
+{Module ten: Testing and Continuous Integration}
+
+  Unit test: single function or module
+    Mockout external dependencies: APIs, database calls and file system interaction
+  Integration test: interactions b/t modules (not covered here)
+  UI test: automate interaction with UI (not covered here)
+
+  6 key decisions to consider for unit test with JS
+  1. Framework
+  2. Assertion library
+  3. Helper libraries
+  4. Where to run tests (environments)
+  5. Where to place tests
+  6. When to run test
+
+
+
 
 
 

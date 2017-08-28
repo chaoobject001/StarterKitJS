@@ -6,6 +6,8 @@ import open from 'open'; // open site in browser
 import webpack from 'webpack';
 import config from '../webpack.config.dev';
 
+/* eslint-disable no-console */
+
 const port = 3000;
 const app = express(); // create an instance of express and set to the variable app
 const compiler = webpack(config);
