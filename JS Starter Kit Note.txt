@@ -240,7 +240,37 @@ Setup ESLint (now lint TypeScript)
   5. Where to place tests
   6. When to run test
 
-
+  1. Framework
+    options:
+      Mocha (selected)
+      Jasmine (assertion library built-in)
+      Tape (lean and simple)
+      QUnit
+      AVA (parallel test execution & re-run impacted tests only)
+      Jest (from facebook, recently updated, wraper around Jasmine)
+  2. Assertion library
+    Assertion: declare what is expected
+      Chai
+  3. Helper library
+    options:
+      JSDOM (selected): Simulate browser with node without a browser
+      Cheerio: JQuery for server
+  4. Where to run test:
+    options:
+      Browser: Karma, Testem
+      Headless browser: PhantomJS
+      In-memory DOM: JSDOM (a light-weight alternative to PhantomJS) - selected
+  5. Where to store tests:
+    options:
+      centralized (folder):
+        less noise in source code directory
+        inertia
+      alongside: (node) - selected
+        easy import
+        clear visibility
+        no recreating folder structure
+        easy to move file
+  6. When to run test: Everytime you hit Save (for unit test)
 
 
 
