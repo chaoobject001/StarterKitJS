@@ -297,6 +297,19 @@ Setup ESLint (now lint TypeScript)
     Semaphore
     SnapCI
 
+{Module eleven: HTTP calls}
+Libraries to make HTTP calls (AJAX call)
+Mock HTTP calls
+
+  HTTP call Approcahes
+    Node:
+      http (built-in package): low level library to make HTTP request
+      request (higher lv. library): streamlined and preferred by many
+    Browser (running JS for browser):
+      XMLHttpRequest
+      JQuery
+    Node & Browser:
+
 
 
 
