@@ -291,7 +291,7 @@ Setup ESLint (now lint TypeScript)
 
   Options:
     Travis: Linux based
-    Appveyor: Windows based
+    Appveyor: Windows based (selected)
     Jenkins: highly configurable
     circleCI
     Semaphore
