@@ -283,6 +283,20 @@ Setup ESLint (now lint TypeScript)
     - Didn't run unit test - capture it!
     - Catch mistakes quickly
 
+  What does CI server do?
+    - Build automatically at commit
+    - Run tests
+    - Check code coverage
+    - Deploy automatically
+
+  Options:
+    Travis: Linux based
+    Appveyor: Windows based
+    Jenkins: highly configurable
+    circleCI
+    Semaphore
+    SnapCI
+
 
 
 
