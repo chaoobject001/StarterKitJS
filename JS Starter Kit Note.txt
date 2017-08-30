@@ -304,11 +304,40 @@ Mock HTTP calls
   HTTP call Approcahes
     Node:
       http (built-in package): low level library to make HTTP request
-      request (higher lv. library): streamlined and preferred by many
+      request (higher lv. library): streamlined and preferred by many - preferred
     Browser (running JS for browser):
       XMLHttpRequest
-      JQuery
+      JQuery ($.ajax)
+      Framework-based (Angular) include HTTP Services
+      Fetch: What Working Group - preferred with limitation
     Node & Browser:
+      isomorphic-fetch
+      xhr (package on NPM): a subset of request library for node
+      SuperAgent
+      Axios (clean promise based API)
+  
+  Centralized HTTP Requests:
+      Wehn making API calls, make sure they are handled in ONE spot
+        - one place to configure all calls:
+            base URL
+            preferred response type
+            (if) passing credentials in single spot     
+        - all get, put, post and delete calls are handled consistently 
+        - user is aware of async call in progress via a moving preloader icon - spinner:
+            preloader continues to display until all async calls are complete
+        - Single place to handle error: application can handle error in a standardized way 
+            - display error dialog
+            - log error via separate HTTP request
+        - Single seam for mocking all API: change single line of code point to a different base URL
+    
+    Fetch
+        Setup
+        Centralizing API call
+
+
+
+
+
 
 
 
