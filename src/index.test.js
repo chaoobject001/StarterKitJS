@@ -10,7 +10,7 @@ describe('Our first test', () => {
 });
 
 describe('index.html', () => {
-  it('should say hello', (done) => {
+  it('should have h1 that says Users', (done) => {
     const index = fs.readFileSync('./src/index.html', "utf-8");
     //(jsdom.env) if to run js files, place the list of js files starting from 2nd paramenter
     // here the 2nd parameter is a call back function, which is run after JSDOM is completed
@@ -18,7 +18,7 @@ describe('index.html', () => {
     jsdom.env(index, function(err, window){
       // window referring window in browser
       const h1 = window.document.getElementsByTagName('h1')[0];
-      expect(h1.innerHTML).to.equal("wubalubadubdub");
+      expect(h1.innerHTML).to.equal("Users");
       done();
       // async test involving call back, function(err, window) {}
       // done(); is required to inform the result of expect
