@@ -7,7 +7,7 @@ getUsers().then(result => {
     let usersBody = ""; // eslint-disable-line no-unused-vars
 
     result.forEach(user => {
-        usersBody += 
+        usersBody +=
         `<tr>
             <td><a href="#" data-id="${user.id}" class="deleteUser">Delete</a></td>
             <td>${user.id}</td>
@@ -17,7 +17,7 @@ getUsers().then(result => {
         </tr>`
     });
 
-    global.document.getElementById('users').innerHtml = userBody; // eslint-disable-line no-undef
+    global.document.getElementById('users').innerHTML = usersBody; // eslint-disable-line no-undef
 });
 
 
