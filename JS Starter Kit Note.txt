@@ -315,26 +315,56 @@ Mock HTTP calls
       xhr (package on NPM): a subset of request library for node
       SuperAgent
       Axios (clean promise based API)
-  
+
   Centralized HTTP Requests:
       Wehn making API calls, make sure they are handled in ONE spot
         - one place to configure all calls:
             base URL
             preferred response type
-            (if) passing credentials in single spot     
-        - all get, put, post and delete calls are handled consistently 
+            (if) passing credentials in single spot
+        - all get, put, post and delete calls are handled consistently
         - user is aware of async call in progress via a moving preloader icon - spinner:
             preloader continues to display until all async calls are complete
-        - Single place to handle error: application can handle error in a standardized way 
+        - Single place to handle error: application can handle error in a standardized way
             - display error dialog
             - log error via separate HTTP request
         - Single seam for mocking all API: change single line of code point to a different base URL
-    
-    Fetch
-        Setup
-        Centralizing API call
 
+  Fetch
+    Setup
+      Centralizing API call
 
+  Selective Polyfilling: Why send polyfill to every browser?
+    polyfill.io
+    Example with fetch: Only send polyfill to those who need it
+      <script
+      src = "https://cdn.polyfill.io/v2/polyfill.js?features=fetch
+      "></script>
+    place this on TOP of index.html, polyfill.io will read user agent
+    and determine if the browser needs polyfill.
+    For browser that doesn't need the polyfill, polyfill.io will send an empty response.
+
+  Mock HTTP
+    - To build app required many different data but the services have yet to be built
+    - Unit Test
+    - Constant / Instant response for slow or expensive web services
+    - Keep working when service is down or offline
+    - Avoid inter-team bottlenecks
+
+  Nock: Mock HTTP for unit test
+    Nock hijack HTTP request to the specified URL and return specified response
+
+  Static JSON: with centralized API call to app
+    Point to a staic JSON file instead of mak HTTP call
+
+  Create real server that mocks real API
+    - api-mock
+    - JSON server (preferred)
+    - JSON Schema faker: generate fake data
+      Specify data type (like string), then random data will be generated (for writing to a file, if needed)
+    - BrowserSync or Express: Most work, but most powerful
+
+  Plan for Mocking:
 
 
 
