@@ -365,6 +365,23 @@ Mock HTTP calls
     - BrowserSync or Express: Most work, but most powerful
 
   Plan for Mocking:
+  1. Declare schema
+    - JSON Schema Faker: declare what fake API should look like
+  2. Generate random data
+    JSON Schema Faker works with the following:
+      - faker.js
+      - chance.js
+      - randexp.js
+    Different random data sets everytime JSON Schema Faker is executed
+  3. Serve Data via API
+    - JSON Server: create realistic API using static JSON file (dynamically generated data set)
+      - support Create, update, reads and deletes: less changes in JSON Schema Faker
+  
+  Mocking Libraries 
+    One of the standards for JSON: JSON Schema     
+     
+
+
 
 
 
