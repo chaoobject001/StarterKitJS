@@ -1,5 +1,5 @@
 import path from 'path';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
+// import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 export default {
   debug: true, // enable debug message
@@ -22,18 +22,18 @@ export default {
   // No physical file generated, simulation only
   // this can be consumed by html page
 
-  // devServer: {
-  //   contentBase: path.resolve(__dirname, 'src')
-  // },
+  devServer: {
+     contentBase: path.resolve(__dirname, 'src')
+   },
 
-  // plugins: [],
-  plugins: [
-    // Create HTML file that includes reference to bundled JS.
-    new HtmlWebpackPlugin({
-      template: 'src/index.html',
-      inject: true
-    })
-  ],
+  plugins: [],
+  // plugins: [
+  //   // Create HTML file that includes reference to bundled JS.
+  //   new HtmlWebpackPlugin({
+  //     template: 'src/index.html',
+  //     inject: true
+  //   })
+  // ],
   
   // plugin for extra features:
   // hot-reload, catch error, linting-style
