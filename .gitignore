@@ -1,2 +1,5 @@
 .gitignore
 node_modules
+
+# mock db file
+db.json

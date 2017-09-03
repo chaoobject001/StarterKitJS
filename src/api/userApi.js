@@ -18,7 +18,7 @@ export function getUsers() {
 // the actual call that use Fetch occurs in the get function
 function get(url) {
     return fetch(baseUrl + url).then(onSuccess, onError);
-}
+  }
 
 function onSuccess(response) {
     return response.json();
