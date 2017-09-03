@@ -1,5 +1,8 @@
 import 'whatwg-fetch'; 
 // import what working group fetch - support browser that yet to support Fetch natively
+import getBaseUrl from './baseUrl';
+
+const baseUrl = getBaseUrl();
 
 // This is similar to repository pattern 
 // This centralized API proxy abstracts away HTTP API and handle AJAX calls
@@ -14,7 +17,8 @@ export function getUsers() {
 
 // the actual call that use Fetch occurs in the get function
 function get(url) {
-    return fetch(url).then(onSuccess, onError);
+    console.log('URL: ' + baseUrl + url); // eslint-disable-line no-console
+    return fetch(baseUrl + url).then(onSuccess, onError);
 }
 
 function onSuccess(response) {
