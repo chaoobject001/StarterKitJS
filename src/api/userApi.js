@@ -17,7 +17,6 @@ export function getUsers() {
 
 // the actual call that use Fetch occurs in the get function
 function get(url) {
-    console.log('URL: ' + baseUrl + url); // eslint-disable-line no-console
     return fetch(baseUrl + url).then(onSuccess, onError);
 }
 
