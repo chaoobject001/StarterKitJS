@@ -13,12 +13,25 @@ export function getUsers() {
     return get('users');
 }
 
+export function deleteUser(id) {
+    return del(`users/${id}`);
+}
+
 // all functions below are private 
 
 // the actual call that use Fetch occurs in the get function
 function get(url) {
     return fetch(baseUrl + url).then(onSuccess, onError);
   }
+
+// delete is a reserved word - cannot be used for function name
+function del(url) {
+    const request = new Request(baseUrl + url, {
+        method: `DELETE`
+    });
+    return fetch(request).then(onSuccess, onError);
+}
+
 
 function onSuccess(response) {
     return response.json();

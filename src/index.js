@@ -1,6 +1,6 @@
 //import './index.css'; // Webpack parse CSS then inject style sheet onto the page
 
-import {getUsers} from './api/userApi';
+import {getUsers, deleteUser} from './api/userApi';
 
 // Populate table of users via API call
 getUsers().then(result => {
@@ -18,9 +18,22 @@ getUsers().then(result => {
     });
 
     global.document.getElementById('users').innerHTML = usersBody; // eslint-disable-line no-undef
+
+
+const deleteLinks = global.document.getElementsByClassName('deleteUser');
+
+    // Must use array.from to create a real array from a DOM collection
+    // getElementsByClassname only return an "array like" object
+    Array.from( deleteLinks, link => {
+        link.onclick = function(event){
+            const element = event.target;
+            event.preventDefault();
+            deleteUser(element.attributes["data-id"].value);
+            const row = element.parentNode.parentNode;
+            row.parentNode.removeChild(row);
+        };
+    });
 });
-
-
 // import numeral from 'numeral'; // library for formating number
 
 // const courseValue = numeral(1000).format('$0,0.00');
