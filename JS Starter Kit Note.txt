@@ -380,10 +380,68 @@ Mock HTTP calls
   Mocking Libraries 
     One of the standards for JSON: JSON Schema     
      
+  Summary:
+  Making HTTP calls
+    - Node: 
+        http, 
+        request (streamlined api)
+    - Browser: 
+        XMLHttpRequest, 
+        jQuery, 
+        Fetch (streamlined) -> possibly switch to Open?
+    - Node and Browser: 
+        Isomorphic Fetch (more preferred?)
+        xhr, 
+        SuperAgent, Axios
+  Mocking HTTP calls
+    - Nock, 
+    - Hard coded JSON
+    - Custom webserver: 
+      json-server, 
+      JSON Schema Faker, 
+      Express, 
+      Browsersync 
 
+{Module twelve: Project Structure}
 
+Starter Kit needs Demo App because...
+  Many people learn best by example
+    Convey directory structure and file naming 
+    Codifying patterns for framework / libraries usage
+    (Passing) test as example for: 
+      Test scenarios, 
+      Naming conventions
+      File placement
+      Mocking strategies
+    Mock API: faster to understand than documentation
+    Example for Automated Deployment
+  Codify decisions for coding standards
+  Interactive example of working with starter 
 
-
+Prpject Structure tips for JS app
+  1. Javascript belong in a .js file
+    Configuration Object Pattern:
+      If you need your code to act differently for different user 
+      - inject JSON from server into application from server
+    Don't dynamically generate JS code;
+    Dynamically generate JSON for JS to use
+  2. Organize by feature instead by file type for larger project
+    By File type (like MVC):
+      /components
+      /data
+      /models
+      /views
+    By Features (all related files grouped together):
+      /authors
+      /courses
+  3. Extract Logic to POJOs
+    Extract as much logic as possible into Plain Old JavaScript Objects
+    For Java: POJOs
+    For C#: POCO (plain old CLR object)
+    Plain Old JavaScript Objects: Pure logic; No framework-specific code
+      - makes the logic easy to test, reuse and minimize tie to framework
+      - example: github / coryhouse / react-slingshot
+      
 
 
 
