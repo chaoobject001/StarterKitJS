@@ -441,7 +441,25 @@ Prpject Structure tips for JS app
     Plain Old JavaScript Objects: Pure logic; No framework-specific code
       - makes the logic easy to test, reuse and minimize tie to framework
       - example: github / coryhouse / react-slingshot
-      
+
+{Module thirteen: Production Build}
+Create Automated Production Build
+- minification: seepd load
+- sourcemap: support debugging in production
+- dynamic HTML handling: production specific concern
+- cache busting: user receive latest code upon deployment
+- bundle splitting: user don't download entire application with just parts changing
+- error logging: tracking bug
+
+  Minification: speed page load and save bandwidth
+    By:
+      - shorten variable and function names
+      - remove comments 
+      - remove white space, newline, and more
+      - 
+
+
+
 
 
 
